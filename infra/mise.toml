@@ -1,0 +1,23 @@
+[tools]
+terraform = "1.13.3"
+
+[env]
+'_'.file = { path = ".env" }
+
+[task_config]
+dir = "src"
+
+[tasks.init]
+run = "terraform init"
+
+[tasks.fmt]
+run = "terraform fmt -recursive"
+
+[tasks.plan]
+run = "terraform plan"
+
+[tasks.apply]
+run = "terraform apply"
+
+[tasks.destroy]
+run = "terraform destroy"
