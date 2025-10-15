@@ -9,5 +9,5 @@ tracer = Tracer()
 @tracer.capture_lambda_handler
 def my_handler(event: dict, context: LambdaContext):
     logger.info({"event": event})
-    logger.info("hello world")
+    logger.info("Hello World")
     return {"code": "200", "msg": "OK"}

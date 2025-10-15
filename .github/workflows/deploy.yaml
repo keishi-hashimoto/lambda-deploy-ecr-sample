@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - src/**.py
+      - app/src/**.py
   workflow_dispatch:
 
 defaults:
