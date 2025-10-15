@@ -1,4 +1,3 @@
 variable "tag" {
-  type    = string
-  default = "test"
+  type = string
 }
